@@ -1,11 +1,24 @@
 {
   "name": "copilot-agent-kit",
-  "version": "1.0.0",
-  "description": "Devoteam NL Copilot kit: save tokens by routing mechanical work to cheap Haiku helpers (Scout, Runner) with a token-saver routing skill, and prevent rework with the grill-me requirements interview.",
-  "author": { "name": "Devoteam NL" },
+  "version": "1.1.0",
+  "description": "Devoteam NL Copilot kit: model-tiered role agents (Planner, Developer, Reviewer, Researcher, Docs Writer, Release Manager, python-ui), cheap Haiku helpers (Scout, Runner), a token-saver routing skill and the grill-me requirements interview.",
+  "author": {
+    "name": "Devoteam NL"
+  },
   "repository": "https://github.com/DevoteamNL/copilot-agent-kit",
   "license": "MIT",
-  "keywords": ["token-saving", "model-routing", "haiku", "requirements", "grilling", "agents", "skills"],
+  "keywords": [
+    "agents",
+    "code-review",
+    "grilling",
+    "haiku",
+    "model-routing",
+    "planner",
+    "python-ui",
+    "requirements",
+    "skills",
+    "token-saving"
+  ],
   "category": "engineering",
   "agents": "agents/",
   "skills": "skills/"
