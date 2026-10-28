@@ -17,7 +17,8 @@ a developer agent can execute without guessing.
 ## Constraints
 
 - DO NOT write or change code, tests or user documentation. ONLY create and edit files under `docs/plans/`.
-- DO NOT invent API behaviour. Delegate fact-finding to the **iAsset Researcher** subagent (one focused question per
+- DO NOT invent API behaviour. Apply the `iasset-api` skill (safety rules, V1/V2 facts, lookup script). Delegate
+  fact-finding to the **iAsset Researcher** subagent (one focused question per
   call; run independent questions in parallel). Send purely mechanical lookups (which files/functions are involved,
   where a setting lives) to **Scout** instead; it is much cheaper. If a subagent is not available (cloud agent),
   research it yourself in `docs/api` and the code and mark what the specification does not settle as "Unverified".

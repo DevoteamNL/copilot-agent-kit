@@ -48,7 +48,7 @@ them, so they can switch the model for that step.
 
 1. Read the plan, [docs/ARCHITECTURE.md](../../docs/ARCHITECTURE.md) and the code you will change. For API calls,
    code against the bundled specifications in [docs/api](../../docs/api/README.md) (V2 OpenAPI with
-   `x-iasset-syncer-notes`, V1 JSON) and add debug-mode responses (`_debug_payload`) that match them. Ask the
+   `x-iasset-syncer-notes`, V1 JSON) via the `iasset-api` skill and its lookup script, and add debug-mode responses (`_debug_payload`) that match them. Ask the
    **iAsset Researcher** about anything that is unclear; if that subagent is not available (cloud agent), search
    `docs/api` and the code yourself and record what stays unverified as an open question in the pull request.
    Note the plan's **Requirements summary / acceptance criteria**: every criterion needs a test or a manual check.

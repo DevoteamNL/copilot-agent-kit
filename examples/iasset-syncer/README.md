@@ -12,3 +12,5 @@ to see what is worth making project-specific:
 
 They reference `iAsset ...` agent names and relative links into that repository, so they do not work as-is
 elsewhere. Copy one, rename it, and replace the specifics with yours.
+
+- **A domain skill** (`skills/iasset-api/`): API facts, safety rules and a lookup script that prints one operation from a large OpenAPI file, so agents don't load 700 KB of spec. A good pattern for any project that has a big API spec.

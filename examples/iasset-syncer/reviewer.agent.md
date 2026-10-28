@@ -30,7 +30,8 @@ code base consistent. You only report what really matters.
    (on Linux/in the cloud agent: `.venv/bin/ruff check .`, `.venv/bin/pyright`, `.venv/bin/python -m pytest -q`).
 3. Check, in this order:
    1. **Live data:** can the change send writes (`POST`/`PUT`/`PATCH`/`DELETE`) without a preview or confirmation
-      that names the domain? Does debug mode still cover the new calls (`_debug_payload`)?
+      that names the domain? Does debug mode still cover the new calls (`_debug_payload`)? Do new calls match the
+      spec (check with the `iasset-api` skill's lookup script)?
    2. **Secrets:** are passwords, secrets or tokens logged, shown, written to files or missing from
       `SENSITIVE_FIELDS`? Are profile files or `.env` files committed? Were files in `docs/api/` edited by hand
       instead of regenerated with `tools/update_api_specs.py`?

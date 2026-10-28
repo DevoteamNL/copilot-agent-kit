@@ -22,7 +22,8 @@ Visma iAsset. Your job is to find facts that a planner or developer needs, and t
 1. The code in `iasset/`, and the tests in `tests/` (current behaviour). [docs/ARCHITECTURE.md](../../docs/ARCHITECTURE.md)
    summarises the API quirks.
 2. The bundled public API documentation in [docs/api](../../docs/api/README.md) (available locally and in the
-   Copilot cloud agent):
+   Copilot cloud agent). Use the `iasset-api` skill: its `scripts/iasset_spec.py` prints one operation
+   (`op POST /objects`) or a search (`find passport`) without loading the full files:
    - V2: `docs/api/v2/iasset-api-v2.openapi.json`. Look up the operation, parameters, request body schema and
      responses, and read its `x-iasset-syncer-notes`. Recent changes are in `docs/api/v2/CHANGELOG.md`.
    - V1: `docs/api/v1/iasset-api-v1.json` (endpoints with body fields, descriptions and example responses).
